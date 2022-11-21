@@ -1409,7 +1409,7 @@ MagickBooleanType MagickCompositeImageGravity(MagickWand *wand,
 
 <p>Composition uses given x and y offsets, as the 'origin' location of the source images virtual canvas (not the real image) allowing you to compose a list of 'layer images' into the destination images.  This makes it well sutiable for directly composing 'Clears Frame Animations' or 'Coalesced Animations' onto a static or other 'Coalesced Animation' destination image list.  GIF disposal handling is not looked at.</p>
 
-<p>Special case:- If one of the image sequences is the last image (just a single image remaining), that image is repeatally composed with all the images in the other image list.  Either the source or destination lists may be the single image, for this situation.</p>
+<p>Special case:- If one of the image sequences is the last image (just a single image remaining), that image is repeatedly composed with all the images in the other image list.  Either the source or destination lists may be the single image, for this situation.</p>
 
 <p>In the case of a single destination image (or last image given), that image will ve cloned to match the number of images remaining in the source image list.</p>
 
