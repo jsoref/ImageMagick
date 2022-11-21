@@ -156,7 +156,7 @@ Image *DistortImage(const Image *image,const DistortMethod method,
 
 <dd> ArcDistortion always ignores source image offset, and always 'bestfit' the destination image with the top left corner offset relative to the polar mapping center. </dd>
 
-<dd> Affine, Perspective, and Bilinear, do least squares fitting of the distrotion when more than the minimum number of control point pairs are provided. </dd>
+<dd> Affine, Perspective, and Bilinear, do least squares fitting of the distortion when more than the minimum number of control point pairs are provided. </dd>
 
 <dd> Perspective, and Bilinear, fall back to a Affine distortion when less than 4 control point pairs are provided.  While Affine distortions let you use any number of control point pairs, that is Zero pairs is a No-Op (viewport only) distortion, one pair is a translation and two pairs of control points do a scale-rotate-translate, without any shearing. </dd>
 
