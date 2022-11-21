@@ -514,7 +514,7 @@ void ScaleGeometryKernelInfo(KernelInfo *kernel,
 
 <p>For Kernels that contain some negative values, (such as 'Sharpen' kernels) the kernel will be scaled by the absolute of the sum of kernel values, so that it will generally fall within the +/- 1.0 range.</p>
 
-<p>For kernels whose values sum to zero, (such as 'Laplacian' kernels) kernel will be scaled by just the sum of the postive values, so that its output range will again fall into the  +/- 1.0 range.</p>
+<p>For kernels whose values sum to zero, (such as 'Laplacian' kernels) kernel will be scaled by just the sum of the positive values, so that its output range will again fall into the  +/- 1.0 range.</p>
 
 <p>For special kernels designed for locating shapes using 'Correlate', (often only containing +1 and -1 values, representing foreground/background matching) a special normalization method is provided to scale the positive values separately to those of the negative values, so the kernel will be forced to become a zero-sum kernel better suited to such searches.</p>
 
