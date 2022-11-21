@@ -302,7 +302,7 @@ KernelInfo *AcquireKernelBuiltIn(const KernelInfoType type,
 
 <dd> Manhattan:[{radius}][x{scale}[!]] Manhattan Distance (also known as Rectilinear, City Block, or the Taxi Cab distance metric), it is the distance needed when you can only travel in horizontal or vertical directions only.  It is the distance a 'Rook' in chess would have to travel, and results in a diamond like distances, where diagonals are further than expected. </dd>
 
-<dd> Octagonal:[{radius}][x{scale}[!]] An interleving of Manhatten and Chebyshev metrics producing an increasing octagonally shaped distance.  Distances matches those of the "Octagon" shaped kernel of the same radius.  The minimum radius and default is 2, producing a 5x5 kernel. </dd>
+<dd> Octagonal:[{radius}][x{scale}[!]] An interleaving of Manhatten and Chebyshev metrics producing an increasing octagonally shaped distance.  Distances matches those of the "Octagon" shaped kernel of the same radius.  The minimum radius and default is 2, producing a 5x5 kernel. </dd>
 
 <dd> Euclidean:[{radius}][x{scale}[!]] Euclidean distance is the 'direct' or 'as the crow flys' distance. However by default the kernel size only has a radius of 1, which limits the distance to 'Knight' like moves, with only orthogonal and diagonal measurements being correct.  As such for the default kernel you will get octagonal like distance function. </dd>
 
