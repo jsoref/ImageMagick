@@ -141,7 +141,7 @@ identified 1 resources</samp></pre>
 <p>Others can store content in the cache along side your content.  However, their content is unavailable to you.  You cannot get, identify, expire or delete content that you do not own as determined by your secret passkey.</p>
 <p>The MagickCache owner can get, identify, expire, or delete all the content, including content you own, with this command, for example:</p>
 <pre class="bg-light text-dark mx-4"><samp>$ magick-cache -passkey passkey.txt identify /opt/magick-cache /</samp></pre>
-<p>Note, expired reesources are annotated with an asterisks.</p>
+<p>Note, expired resources are annotated with an asterisks.</p>
 <h4>MagickCache is not just for Images</h4>
 <p>In addition to a type of <samp>image</samp>, you can store the image content in its original form, video, or audio as content type of <samp>blob</samp> or metadata with a content type of <samp>meta</samp>:</p>
 <pre class="bg-light text-dark mx-4"><samp>$ magick-cache -passkey passkey.txt put /opt/magick-cache movies/blob/mission-impossible/cast/rebecca-ferguson 20210508-rebecca-ferguson.mp4</samp></pre>
