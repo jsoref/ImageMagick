@@ -91,7 +91,7 @@
   <main class="container">
   <div class="magick-template">
 <div class="magick-header">
-<p class="text-center"><a href="morphology.html#AcquireKernelInfo">AcquireKernelInfo</a> &#8226; <a href="morphology.html#AcquireKernelBuiltIn">AcquireKernelBuiltIn</a> &#8226; <a href="morphology.html#CloneKernelInfo">CloneKernelInfo</a> &#8226; <a href="morphology.html#DestroyKernelInfo">DestroyKernelInfo</a> &#8226; <a href="morphology.html#MorphologyApply">MorphologyApply</a> &#8226; <a href="morphology.html#This is almost identical to the MorphologyPrimative">This is almost identical to the MorphologyPrimative</a> &#8226; <a href="morphology.html#MorphologyImage">MorphologyImage</a> &#8226; <a href="morphology.html#ScaleGeometryKernelInfo">ScaleGeometryKernelInfo</a> &#8226; <a href="morphology.html#ScaleKernelInfo">ScaleKernelInfo</a> &#8226; <a href="morphology.html#ShowKernelInfo">ShowKernelInfo</a> &#8226; <a href="morphology.html#UnityAddKernelInfo">UnityAddKernelInfo</a> &#8226; <a href="morphology.html#ZeroKernelNans">ZeroKernelNans</a></p>
+<p class="text-center"><a href="morphology.html#AcquireKernelInfo">AcquireKernelInfo</a> &#8226; <a href="morphology.html#AcquireKernelBuiltIn">AcquireKernelBuiltIn</a> &#8226; <a href="morphology.html#CloneKernelInfo">CloneKernelInfo</a> &#8226; <a href="morphology.html#DestroyKernelInfo">DestroyKernelInfo</a> &#8226; <a href="morphology.html#MorphologyApply">MorphologyApply</a> &#8226; <a href="morphology.html#This is almost identical to the MorphologyPrimitive">This is almost identical to the MorphologyPrimitive</a> &#8226; <a href="morphology.html#MorphologyImage">MorphologyImage</a> &#8226; <a href="morphology.html#ScaleGeometryKernelInfo">ScaleGeometryKernelInfo</a> &#8226; <a href="morphology.html#ScaleKernelInfo">ScaleKernelInfo</a> &#8226; <a href="morphology.html#ShowKernelInfo">ShowKernelInfo</a> &#8226; <a href="morphology.html#UnityAddKernelInfo">UnityAddKernelInfo</a> &#8226; <a href="morphology.html#ZeroKernelNans">ZeroKernelNans</a></p>
 
 <h2><a href="../../api/MagickCore/morphology_8c.html" id="AcquireKernelInfo">AcquireKernelInfo</a></h2>
 
@@ -417,9 +417,9 @@ Image *MorphologyApply(const Image *image,MorphologyMethod method,
 
 <dd>  </dd>
 </dl>
-<h2><a href="../../api/MagickCore/morphology_8c.html" id="This_is almost identical to the MorphologyPrimative">This is almost identical to the MorphologyPrimative</a></h2>
+<h2><a href="../../api/MagickCore/morphology_8c.html" id="This_is almost identical to the MorphologyPrimitive">This is almost identical to the MorphologyPrimitive</a></h2>
 
-<p>This is almost identical to the MorphologyPrimative() function above, but applies the primitive directly to the actual image using two passes, once in each direction, with the results of the previous (and current) row being re-used.</p>
+<p>This is almost identical to the MorphologyPrimitive() function above, but applies the primitive directly to the actual image using two passes, once in each direction, with the results of the previous (and current) row being re-used.</p>
 
 <p>That is after each row is 'Sync'ed' into the image, the next row makes use of those values as part of the calculation of the next row.  It repeats, but going in the opposite (bottom-up) direction.</p>
 
