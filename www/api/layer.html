@@ -266,7 +266,7 @@ void OptimizeImageTransperency(Image *image,ExceptionInfo *exception)
 
 <p>RemoveDuplicateLayers() removes any image that is exactly the same as the next image in the given image list.  Image size and virtual canvas offset must also match, though not the virtual canvas size itself.</p>
 
-<p>No check is made with regards to image disposal setting, though it is the dispose setting of later image that is kept.  Also any time delays are also added together. As such coalesced image animations should still produce the same result, though with duplicte frames merged into a single frame.</p>
+<p>No check is made with regards to image disposal setting, though it is the dispose setting of later image that is kept.  Also any time delays are also added together. As such coalesced image animations should still produce the same result, though with duplicate frames merged into a single frame.</p>
 
 <p>The format of the RemoveDuplicateLayers method is:</p>
 
