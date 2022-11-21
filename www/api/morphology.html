@@ -516,7 +516,7 @@ void ScaleGeometryKernelInfo(KernelInfo *kernel,
 
 <p>For kernels whose values sum to zero, (such as 'Laplician' kernels) kernel will be scaled by just the sum of the postive values, so that its output range will again fall into the  +/- 1.0 range.</p>
 
-<p>For special kernels designed for locating shapes using 'Correlate', (often only containing +1 and -1 values, representing foreground/brackground matching) a special normalization method is provided to scale the positive values separately to those of the negative values, so the kernel will be forced to become a zero-sum kernel better suited to such searches.</p>
+<p>For special kernels designed for locating shapes using 'Correlate', (often only containing +1 and -1 values, representing foreground/background matching) a special normalization method is provided to scale the positive values separately to those of the negative values, so the kernel will be forced to become a zero-sum kernel better suited to such searches.</p>
 
 <p>WARNING: Correct normalization of the kernel assumes that the '*_range' attributes within the kernel structure have been correctly set during the kernels creation.</p>
 
