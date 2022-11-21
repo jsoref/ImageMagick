@@ -663,7 +663,7 @@ static inline void SetPixelb(const Image *magick_restrict image,
     pixel[image->channel_map[bPixelChannel].offset]=b;
 }
 
-static inline void SetPixelBackgoundColor(const Image *magick_restrict image,
+static inline void SetPixelBackgroundColor(const Image *magick_restrict image,
   Quantum *magick_restrict pixel)
 {
   ssize_t
