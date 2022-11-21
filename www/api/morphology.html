@@ -105,7 +105,7 @@
 
 <p>The returned kernel should be freed using the DestroyKernelInfo() when you are finished with it.  Do not free this memory yourself.</p>
 
-<p>Input kernel defintion strings can consist of any of three types.</p>
+<p>Input kernel definition strings can consist of any of three types.</p>
 
 <p>"name:args[[@&gt;&lt;]" Select from one of the built in kernels, using the name and geometry arguments supplied.  See AcquireKernelBuiltIn()</p>
 
@@ -117,7 +117,7 @@
 
 <p>" kernel ; kernel ; kernel ; "</p>
 
-<p>Any extra ';' characters, at start, end or between kernel defintions are simply ignored.</p>
+<p>Any extra ';' characters, at start, end or between kernel definitions are simply ignored.</p>
 
 <p>The special flags will expand a single kernel, into a list of rotated kernels. A '@' flag will expand a 3x3 kernel into a list of 45-degree cyclic rotations, while a '&gt;' will generate a list of 90-degree rotations. The '&lt;' also exands using 90-degree rotates, but giving a 180-degree reflected kernel before the +/- 90-degree rotations, which can be important for Thinning operations.</p>
 
@@ -556,7 +556,7 @@ void ScaleKernelInfo(KernelInfo *kernel, const double scaling_factor,
 </dl>
 <h2><a href="../../api/MagickCore/morphology_8c.html" id="ShowKernelInfo">ShowKernelInfo</a></h2>
 
-<p>ShowKernelInfo() outputs the details of the given kernel defination to standard error, generally due to a users 'morphology:showKernel' option request.</p>
+<p>ShowKernelInfo() outputs the details of the given kernel definition to standard error, generally due to a users 'morphology:showKernel' option request.</p>
 
 <p>The format of the ShowKernel method is:</p>
 
