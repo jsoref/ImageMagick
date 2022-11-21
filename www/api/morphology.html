@@ -362,7 +362,7 @@ KernelInfo *DestroyKernelInfo(KernelInfo *kernel)
 
 <p>MorphologyApply() applies a morphological method, multiple times using a list of multiple kernels.  This is the method that should be called by other 'operators' that internally use morphology operations as part of their processing.</p>
 
-<p>It is basically equivalent to as MorphologyImage() (see below) but without any user controls.  This allows internel programs to use this method to perform a specific task without possible interference by any API user supplied settings.</p>
+<p>It is basically equivalent to as MorphologyImage() (see below) but without any user controls.  This allows internal programs to use this method to perform a specific task without possible interference by any API user supplied settings.</p>
 
 <p>It is MorphologyImage() task to extract any such user controls, and pass them to this function for processing.</p>
 
