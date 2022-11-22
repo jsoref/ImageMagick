@@ -1039,7 +1039,7 @@ static MagickBooleanType EncodeImageAttributes(Image *image,FILE *file,
     YAMLFormatLocaleFile(file,"    baseType: %s\n",
       CommandOptionToMnemonic(MagickTypeOptions,(ssize_t) image->type));
   if (version < 1.0)
-    YAMLFormatLocaleFile(file,"    endianess: %s\n",
+    YAMLFormatLocaleFile(file,"    endianness: %s\n",
       CommandOptionToMnemonic(MagickEndianOptions,(ssize_t) image->endian));
   else
     YAMLFormatLocaleFile(file,"    endianness: %s\n",

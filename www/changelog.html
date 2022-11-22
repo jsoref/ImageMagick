@@ -128,7 +128,7 @@
   <li> Support seamless blending of a foreground and background image.</li>
   <li> Support saliency blending of a foreground and background image.</li>
   <li> Support QOI image format.</li>
-  <li> Perist frame delay when converting APNG to Webp (reference    https://github.com/ImageMagick/ImageMagick/issues/4704).</li>
+  <li> Persist frame delay when converting APNG to Webp (reference    https://github.com/ImageMagick/ImageMagick/issues/4704).</li>
   <li> -fx performance increase by one or two orders of magnitude (reference    https://github.com/ImageMagick/ImageMagick/discussions/4533).</li>
   <li> Add support for formatted text (reference    https://github.com/ImageMagick/ImageMagick/discussions/4515).</li>
 <dt>2021-12-22  7.1.0-19  &lt;quetzlzacatenango@image...&gt;</dt>
@@ -174,13 +174,13 @@
   <li> Release ImageMagick version 7.1.0-11 GIT revision 19313:fbf76f2ef:20211024</li>
 <dt>2021-10-11  7.1.0-11  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Fix connected component abort trap (reference    https://github.com/ImageMagick/ImageMagick/issues/4372).</li>
-  <li> Fix possible unitialized values (reference    https://github.com/ImageMagick/ImageMagick/issues/4379).</li>
+  <li> Fix possible uninitialized values (reference    https://github.com/ImageMagick/ImageMagick/issues/4379).</li>
   <li> Fix stack overflow when parsing malicious tiff image file (report from    Muhammad Aldo Firmansyah).</li>
 <dt>2021-10-10  7.1.0-10  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Release ImageMagick version 7.1.0-10 GIT revision 19236:07ebe6b6e:20211010</li>
 <dt>2021-10-03  7.1.0-10  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Improved algorithm for automatic calculation of pointsize for caption and    labels.</li>
-  <li> Support -auto-orient option in the identify utlity.</li>
+  <li> Support -auto-orient option in the identify utility.</li>
 <dt>2021-10-03  7.1.0-9  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Release ImageMagick version 7.1.0-9 GIT revision 19220:7921bf068:20211003</li>
 <dt>2021-10-03  7.1.0-9  Dirk Lemstra &lt;dirk@lem.....org&gt;</dt>
@@ -298,7 +298,7 @@
   <li> Release ImageMagick version 7.0.11-3 GIT revision 18521:10079791f:20210306</li>
 <dt>2021-03-02  7.0.11-3  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Eliminate multiple division by zero exceptions (reference    https://github.com/ImageMagick/ImageMagick/issues/3339 and others).</li>
-  <li> Use -define filename:literal=true to bypass interpretting embedded    formatting characters and instead use the filename literally.</li>
+  <li> Use -define filename:literal=true to bypass interpreting embedded    formatting characters and instead use the filename literally.</li>
 <dt>2021-02-27  7.0.11-2  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Release ImageMagick version 7.0.11-2 GIT revision 18492:c524ed20c:20210227</li>
 <dt>2021-02-25  7.0.11-2  Dirk Lemstra &lt;dirk@lem.....org&gt;</dt>
@@ -379,7 +379,7 @@
   <li> Release ImageMagick version 7.0.10-53 GIT revision 18083:3b141f557:20201224</li>
 <dt>2020-12-20  7.0.10-53  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> CSS colors no longer require commas.</li>
-  <li> eliminate possible arthimetic overflow (reference    https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28849)</li>
+  <li> eliminate possible arithmetic overflow (reference    https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=28849)</li>
   <li> support display-p3, Adobe-98, and Pro-photo colorspaces</li>
   <li> read/write 1024 colors Sixel images (reference    https://github.com/ImageMagick/ImageMagick/discussions/3018).</li>
 <dt>2020-12-19  7.0.10-52  &lt;quetzlzacatenango@image...&gt;</dt>
@@ -723,7 +723,7 @@
   <li> Optimize -evaluate-sequence option (reference    https://github.com/ImageMagick/ImageMagick/issues/1824).</li>
   <li> Support Fx do() iterator.</li>
   <li> `magick -size 100x100 xc:black black.pnm` no longer creates a white image    (reference https://github.com/ImageMagick/ImageMagick/issues/1817).</li>
-  <li> setjmp/longjmp in jpeg.c no longer trigger undefind behavior (reference    https://imagemagick.org/discourse-server///viewtopic.html?f=3&amp;t=37379).</li>
+  <li> setjmp/longjmp in jpeg.c no longer trigger undefined behavior (reference    https://imagemagick.org/discourse-server///viewtopic.html?f=3&amp;t=37379).</li>
   <li> Permit compositing in the CMYK colorspace (reference    https://imagemagick.org/discourse-server///viewtopic.html?f=3&amp;t=37368).</li>
 <dt>2020-01-04  7.0.9-14 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Release ImageMagick version 7.0.9-14, GIT revision 16654:89ef7ea:20200104.</li>
@@ -775,7 +775,7 @@
   <li> Release ImageMagick version 7.0.9-6, GIT revision 16407:1725ec3:20191126.</li>
 <dt>2019-11-19  7.0.9-6 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Increase the maximum number of bezier coordinates (reference    https://github.com/ImageMagick/ImageMagick/issues/1784).</li>
-  <li> Santize "'" from SHOW and WIN delegates under Linux, '"\' for Windows    (thanks to Enzo Puig).</li>
+  <li> Sanitize "'" from SHOW and WIN delegates under Linux, '"\' for Windows    (thanks to Enzo Puig).</li>
   <li> Correct for TGA orientation (reference    https://imagemagick.org/discourse-server///viewtopic.html?f=3&amp;t=34757).</li>
   <li> The result for -compose Copy -extent on a  MYK image is CMYK (reference    https://imagemagick.org/discourse-server///viewtopic.html?f=3&amp;t=37118).</li>
   <li> Fix potential buffer overflow when reading a fax image (alert from    Justin).</li>
@@ -814,7 +814,7 @@
 <dt>2019-09-29  7.0.8-67 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Release ImageMagick version 7.0.8-67, GIT revision 16145:6f2feb9:20190929.</li>
 <dt>2019-09-28  7.0.8-67 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
-  <li> line endings renedered as empty boxes (reference    https://github.com/ImageMagick/ImageMagick/issues/1704).</li>
+  <li> line endings rendered as empty boxes (reference    https://github.com/ImageMagick/ImageMagick/issues/1704).</li>
 <dt>2019-09-21  7.0.8-66 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Release ImageMagick version 7.0.8-66, GIT revision 16134:f6ce80a:20190921.</li>
 <dt>2019-09-09  7.0.8-66 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
@@ -823,7 +823,7 @@
   <li> Release ImageMagick version 7.0.8-65, GIT revision 16130:254db34:20190915.</li>
 <dt>2019-09-09  7.0.8-65 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Eliminate fault when trace delegate is not available.</li>
-  <li> Properly distinquish linear and non-linear gray colorspaces (reference    https://github.com/ImageMagick/ImageMagick/issues/1680).</li>
+  <li> Properly distinguish linear and non-linear gray colorspaces (reference    https://github.com/ImageMagick/ImageMagick/issues/1680).</li>
 <dt>2019-09-07  7.0.8-64 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Release ImageMagick version 7.0.8-64, GIT revision 16108:2ad3cbc:20190907.</li>
 <dt>2019-09-02  7.0.8-64 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
@@ -861,7 +861,7 @@
   <li> Release ImageMagick version 7.0.8-57, GIT revision 15948:8fba4a3:20190726.</li>
 <dt>2019-07-22  7.0.8-57 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Heap-buffer-overflow in Postscript coder (reference    https://github.com/ImageMagick/ImageMagick/issues/1644).</li>
-  <li> The -alpha shape option nondeteministic under OpenMP (reference    https://imagemagick.org/discourse-server///viewtopic.html?f=3&amp;t=36396).</li>
+  <li> The -alpha shape option nondeterministic under OpenMP (reference    https://imagemagick.org/discourse-server///viewtopic.html?f=3&amp;t=36396).</li>
   <li> Correction to the ModulusAdd and ModulusSubtract composite op (reference    https://imagemagick.org/discourse-server///viewtopic.html?f=2&amp;t=36413).</li>
 <dt>2019-07-20  7.0.8-56 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Release ImageMagick version 7.0.8-56, GIT revision 15936:2ac4147:20190720.</li>
@@ -961,7 +961,7 @@
 <dt>2019-04-07  7.0.8-39 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Release ImageMagick version 7.0.8-39, GIT revision 15489:6120f8bc1:20190406</li>
 <dt>2019-04-06  7.0.8-39 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
-  <li> The -layers option compared pixels inocorrectly as opacity rather than    alpha.</li>
+  <li> The -layers option compared pixels incorrectly as opacity rather than    alpha.</li>
   <li> The -preview raise option now returns expected results.</li>
   <li> Initialise ghostscript instances with NULL (reference    https://github.com/ImageMagick/ImageMagick/pull/1538).</li>
 <dt>2019-04-06  7.0.8-38 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
@@ -1332,7 +1332,7 @@
 <dt>2017-08-27  7.0.6-10 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Release ImageMagick version 7.0.6-10, GIT revision 20920:9940c367a:20170827.</li>
 <dt>2017-08-27  7.0.6-10 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
-  <li> Support -metric ssim, structual similarity index.</li>
+  <li> Support -metric ssim, structural similarity index.</li>
 <dt>2017-08-26  7.0.6-10 Dirk Lemstra &lt;dirk@lem.....org&gt;</dt>
   <li> Fixed thread safety issue inside the pango and librsvg decoder    (reference: https://github.com/dlemstra/Magick.NET/issues/91).</li>
 <dt>2017-08-20  7.0.6-9 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
@@ -1683,7 +1683,7 @@
 <dt>2016-06-04  7.0.1-10 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Deny indirect reads by policy, remove policy to permit, e.g.,    convert caption:@mytext.txt ...</li>
   <li> RLE check for pixel offset less than 0 (heap overflow report from Craig    Young).</li>
-  <li> Properly initialze PES blocks (reference    https://github.com/ImageMagick/ImageMagick/issues/213).</li>
+  <li> Properly initialize PES blocks (reference    https://github.com/ImageMagick/ImageMagick/issues/213).</li>
 <dt>2016-06-03  7.0.1-9 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Release ImageMagick version 7.0.1-9, GIT revision 10847:339f803:20160602.</li>
 <dt>2016-06-02  7.0.1-9 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
@@ -1717,8 +1717,8 @@
   <li> Prevent possible shell command injection vulnerability through the    authenticate parameter of the PDF, PCL and XPS coders (report from    Erez Turjeman).</li>
   <li> Quote passwords when passed to a delegate program.</li>
   <li> Iterate channels over source image rather than destination (bug report    from Hanno Böck).</li>
-  <li> Can read geo-related EXIF metdata once-again (reference    https://github.com/ImageMagick/ImageMagick/issues/198).</li>
-  <li> Sanitize all delegate emedded formatting characters.</li>
+  <li> Can read geo-related EXIF metadata once-again (reference    https://github.com/ImageMagick/ImageMagick/issues/198).</li>
+  <li> Sanitize all delegate embedded formatting characters.</li>
   <li> Don't sync pixel cache in AcquireAuthenticCacheView() (bug report from    Hanno Böck).</li>
 <dt>2016-05-09  7.0.1-3 Cristy  &lt;quetzlzacatenango@image...&gt;</dt>
   <li> Release ImageMagick version 7.0.1-3, GIT revision 10755:d540dda:20160509.</li>
@@ -1782,7 +1782,7 @@
     </div>
   </footer>
 
-  <!-- Javascript assets -->
+  <!-- JavaScript assets -->
   <script src="assets/magick.js" ></script>
   </body>
 </html>

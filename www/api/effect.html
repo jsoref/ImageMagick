@@ -234,7 +234,7 @@ Image *BilateralBlurImage(const Image *image,const size_t width,
 
 <dd> </dd>
 <dt>spatial_sigma</dt>
-<dd>sigma in the coordinate space. A larger value means that farther pixels influence each other as long as their colors are close enough (see intensity_sigma ). When the neigborhood diameter is greater than zero, it specifies the neighborhood size regardless of spatial_sigma. Otherwise, the neigborhood diameter is proportional to spatial_sigma. </dd>
+<dd>sigma in the coordinate space. A larger value means that farther pixels influence each other as long as their colors are close enough (see intensity_sigma ). When the neighborhood diameter is greater than zero, it specifies the neighborhood size regardless of spatial_sigma. Otherwise, the neighborhood diameter is proportional to spatial_sigma. </dd>
 
 <dd> </dd>
 <dt>exception</dt>
@@ -275,7 +275,7 @@ Image *ConvolveImage(const Image *image,const KernelInfo *kernel,
 </dl>
 <h2><a href="../../api/MagickCore/effect_8c.html" id="DespeckleImage">DespeckleImage</a></h2>
 
-<p>DespeckleImage() reduces the speckle noise in an image while perserving the edges of the original image.  A speckle removing filter uses a complementary hulling technique (raising pixels that are darker than their surrounding neighbors, then complementarily lowering pixels that are brighter than their surrounding neighbors) to reduce the speckle index of that image (reference Crimmins speckle removal).</p>
+<p>DespeckleImage() reduces the speckle noise in an image while preserving the edges of the original image.  A speckle removing filter uses a complementary hulling technique (raising pixels that are darker than their surrounding neighbors, then complementarily lowering pixels that are brighter than their surrounding neighbors) to reduce the speckle index of that image (reference Crimmins speckle removal).</p>
 
 <p>The format of the DespeckleImage method is:</p>
 
@@ -714,7 +714,7 @@ Image *SpreadImage(const Image *image,
 
 <dd> </dd>
 <dt>method</dt>
-<dd> intepolation method. </dd>
+<dd> interpolation method. </dd>
 
 <dd> </dd>
 <dt>radius</dt>
@@ -762,7 +762,7 @@ ExceptionInfo *exception)
 
 <dd> </dd>
 <dt>threshold</dt>
-<dd>the threshold in pixels needed to apply the diffence gain. </dd>
+<dd>the threshold in pixels needed to apply the difference gain. </dd>
 
 <dd> </dd>
 <dt>exception</dt>
@@ -795,7 +795,7 @@ ExceptionInfo *exception)
     </div>
   </footer>
 
-  <!-- Javascript assets -->
+  <!-- JavaScript assets -->
   <script src="../../assets/magick.js" ></script>
   </body>
 </html>

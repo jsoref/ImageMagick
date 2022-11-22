@@ -101,7 +101,7 @@
 
 <p>DeskewImage() removes skew from the image.  Skew is an artifact that occurs in scanned images because of the camera being misaligned, imperfections in the scanning or surface, or simply because the paper was not placed completely flat when scanned.</p>
 
-<p>The result will be auto-croped if the artifact "deskew:auto-crop" is defined, while the amount the image is to be deskewed, in degrees is also saved as the artifact "deskew:angle".</p>
+<p>The result will be auto-cropped if the artifact "deskew:auto-crop" is defined, while the amount the image is to be deskewed, in degrees is also saved as the artifact "deskew:angle".</p>
 
 <p>The format of the DeskewImage method is:</p>
 
@@ -153,7 +153,7 @@ Image *IntegralRotateImage(const Image *image,size_t rotations,
 
 <p>ShearImage() creates a new image that is a shear_image copy of an existing one.  Shearing slides one edge of an image along the X or Y axis, creating a parallelogram.  An X direction shear slides an edge along the X axis, while a Y direction shear slides an edge along the Y axis.  The amount of the shear is controlled by a shear angle.  For X direction shears, x_shear is measured relative to the Y axis, and similarly, for Y direction shears y_shear is measured relative to the X axis.  Empty triangles left over from shearing the image are filled with the background color defined by member 'background_color' of the image..  ShearImage() allocates the memory necessary for the new Image structure and returns a pointer to the new image.</p>
 
-<p>ShearImage() is based on the paper "A Fast Algorithm for General Raster Rotatation" by Alan W. Paeth.</p>
+<p>ShearImage() is based on the paper "A Fast Algorithm for General Raster Rotation" by Alan W. Paeth.</p>
 
 <p>The format of the ShearImage method is:</p>
 
@@ -177,7 +177,7 @@ Image *ShearImage(const Image *image,const double x_shear,
 
 <p>ShearRotateImage() creates a new image that is a rotated copy of an existing one.  Positive angles rotate counter-clockwise (right-hand rule), while negative angles rotate clockwise.  Rotated images are usually larger than the originals and have 'empty' triangular corners.  X axis.  Empty triangles left over from shearing the image are filled with the background color defined by member 'background_color' of the image.  ShearRotateImage allocates the memory necessary for the new Image structure and returns a pointer to the new image.</p>
 
-<p>ShearRotateImage() is based on the paper "A Fast Algorithm for General Raster Rotatation" by Alan W. Paeth.  ShearRotateImage is adapted from a similar method based on the Paeth paper written by Michael Halle of the Spatial Imaging Group, MIT Media Lab.</p>
+<p>ShearRotateImage() is based on the paper "A Fast Algorithm for General Raster Rotation" by Alan W. Paeth.  ShearRotateImage is adapted from a similar method based on the Paeth paper written by Michael Halle of the Spatial Imaging Group, MIT Media Lab.</p>
 
 <p>The format of the ShearRotateImage method is:</p>
 
@@ -222,7 +222,7 @@ Image *ShearRotateImage(const Image *image,const double degrees,
     </div>
   </footer>
 
-  <!-- Javascript assets -->
+  <!-- JavaScript assets -->
   <script src="../../assets/magick.js" ></script>
   </body>
 </html>

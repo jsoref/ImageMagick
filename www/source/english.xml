@@ -610,7 +610,7 @@
         <message name="CompositeImageRequired">
           composite image required
         </message>
-        <message name="CurlyBrasesNestedTooDeeply">
+        <message name="CurlyBracesNestedTooDeeply">
           curly braces nested too deeply
         </message>
         <message name="DeprecatedOptionNoCode">
@@ -1435,11 +1435,11 @@
         load images
       </message>
     </Load>
-    <Magnfiy>
+    <Magnify>
       <message name="Image">
-        magnfiy image
+        magnify image
       </message>
-    </Magnfiy>
+    </Magnify>
     <MedianFilter>
       <message name="Image">
         filter image with neighborhood ranking

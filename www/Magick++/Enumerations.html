@@ -277,7 +277,7 @@ Photoshop bitmap (PSD) files.
 			<p>CMYKColorspace</p>
 		</td>
 		<td>
-			<p>Cyan-Magenta-Yellow-Black colorspace. CYMK is a subtractive
+			<p>Cyan-Magenta-Yellow-Black colorspace. CMYK is a subtractive
 			color system used by printers and photographers for the rendering
 			of colors with ink or emulsion, normally on a white surface.</p>
 		</td>
@@ -453,7 +453,7 @@ Specify <i>CompositeOperator</i> to select a different algorithm.
 			<p>OverCompositeOp</p>
 		</td>
 		<td>
-			<p>The result is the union of the the two image shapes with the
+			<p>The result is the union of the two image shapes with the
 			<i>composite image</i> obscuring <i>image</i> in the region of
 			overlap.</p>
 		</td>
@@ -494,7 +494,7 @@ Specify <i>CompositeOperator</i> to select a different algorithm.
 			<p>XorCompositeOp</p>
 		</td>
 		<td>
-			<p>The result is the image data from both c<i>omposite image</i>
+			<p>The result is the image data from both <i>composite image</i>
 			and <i>image</i> that is outside the overlap region. The overlap
 			region will be blank.</p>
 		</td>
@@ -515,7 +515,7 @@ Specify <i>CompositeOperator</i> to select a different algorithm.
 		</td>
 		<td>
 			<p>The result of <i>composite image </i>- <i>image</i>, with
-			overflow cropped to zero. The matte chanel is ignored (set to 255,
+			overflow cropped to zero. The matte channel is ignored (set to 255,
 			full coverage).</p>
 		</td>
 	</tr>
@@ -535,7 +535,7 @@ Specify <i>CompositeOperator</i> to select a different algorithm.
 		<td>
 			<p>The result of <i>composite image </i>- <i>image</i>, with
 			underflow wrapping around (mod 256). The add and subtract
-			operators can be used to perform reverible transformations.</p>
+			operators can be used to perform reversible transformations.</p>
 		</td>
 	</tr>
 	<tr>
@@ -543,7 +543,7 @@ Specify <i>CompositeOperator</i> to select a different algorithm.
 			<p>DifferenceCompositeOp</p>
 		</td>
 		<td>
-			<p>The result of abs(c<i>omposite image </i>- <i>image</i>). This
+			<p>The result of abs(<i>composite image </i>- <i>image</i>). This
 			is useful for comparing two very similar images.</p>
 		</td>
 	</tr>
@@ -568,7 +568,7 @@ Specify <i>CompositeOperator</i> to select a different algorithm.
 			<p>CopyCompositeOp</p>
 		</td>
 		<td>
-			<p>The resulting <i>image</i> is image replaced with c<i>omposite
+			<p>The resulting <i>image</i> is image replaced with <i>composite
 			image</i>. Here the matte information is ignored.</p>
 		</td>
 	</tr>
@@ -675,7 +675,7 @@ Specify <i>CompositeOperator</i> to select a different algorithm.
 <p style="margin-bottom: 0in"><i>CompressionType</i> is used to
 express the desired compression type when encoding an image. Be aware
 that most image types only support a sub-set of the available
-compression types. If the compression type specified is incompatable
+compression types. If the compression type specified is incompatible
 with the image, ImageMagick selects a compression type compatable
 with the image type. 
 </p>
@@ -924,7 +924,7 @@ property for usage details.
 <p style="margin-bottom: 0in"><i>FilterTypes</i> is used to adjust
 the filter algorithm used when resizing images. Different filters
 experience varying degrees of success with various images and can
-take sipngicantly different amounts of processing time.
+take significantly different amounts of processing time.
 ImageMagick uses the <i>LanczosFilter</i> by default since this
 filter has been shown to provide the best results for most images in
 a reasonable amount of time. Other filter types (e.g. <i>TriangleFilter</i>)
@@ -1118,7 +1118,7 @@ object. A common default for gravity is <i>NorthWestGravity</i>.
 			<p>NorthGravity</p>
 		</td>
 		<td>
-			<p>Postiion object at top-center of region</p>
+			<p>Position object at top-center of region</p>
 		</td>
 	</tr>
 	<tr>
@@ -1269,7 +1269,7 @@ classification of the image.
 			<p>ColorSeparationType</p>
 		</td>
 		<td>
-			<p>Cyan/Yellow/Magenta/Black (CYMK) image</p>
+			<p>Cyan/Magenta/Yellow/Black (CMYK) image</p>
 		</td>
 	</tr>
 </table>
@@ -1341,7 +1341,7 @@ image.
 			<p>PartitionInterlace</p>
 		</td>
 		<td>
-			<p>Similar to plane interlaing except that the different planes
+			<p>Similar to plane interlacing except that the different planes
 			are saved to individual files (e.g. image.R, image.G, and image.B)</p>
 		</td>
 	</tr>

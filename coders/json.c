@@ -1042,7 +1042,7 @@ static MagickBooleanType EncodeImageAttributes(Image *image,FILE *file,
     JSONFormatLocaleFile(file,"    \"baseType\": %s,\n",
       CommandOptionToMnemonic(MagickTypeOptions,(ssize_t) image->type));
   if (version < 1.0)
-    JSONFormatLocaleFile(file,"    \"endianess\": %s,\n",
+    JSONFormatLocaleFile(file,"    \"endianness\": %s,\n",
       CommandOptionToMnemonic(MagickEndianOptions,(ssize_t) image->endian));
   else
     JSONFormatLocaleFile(file,"    \"endianness\": %s,\n",

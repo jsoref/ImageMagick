@@ -66,7 +66,7 @@ int main(int argc,char **argv)
 { 
   InitializeMagick(*argv);
 
-  // Construct the image object. Seperating image construction from the 
+  // Construct the image object. Separating image construction from the 
   // the read operation ensures that a failure to read the image file 
   // doesn't render the image object useless. 
   Image image;
@@ -90,7 +90,7 @@ int main(int argc,char **argv)
 </pre>
 The following is the source to a program which illustrates the use of
 Magick++'s efficient reference-counted assignment and copy-constructor
-operations which minimize use of memory and eliminate unncessary copy
+operations which minimize use of memory and eliminate unnecessary copy
 operations (allowing Image objects to be efficiently assigned, and
 copied into containers).&#160; The program accomplishes the
 following:
@@ -373,7 +373,7 @@ height, size_t offset = 0<br />
 the image. Adaptive thresholding is useful if the ideal threshold level
 is not known in advance, or if the illumination gradient is not
 constant
-across the image. Adaptive thresholding works by evaulating the mean
+across the image. Adaptive thresholding works by evaluating the mean
 (average) of a pixel region (size specified by <i>width</i> and <i>height</i>)
 and using the mean as the thresholding value. In order to remove
 residual noise from the background, the threshold may be adjusted by
@@ -609,7 +609,7 @@ in image)</font></td>
       <center><a name="convolve"></a> <font size="-1">convolve</font></center>
       </td>
       <td><font size="-1">size_t order_, const double *kernel_</font></td>
-      <td><font size="-1">Convolve image.&#160; Applies a user-specfied
+      <td><font size="-1">Convolve image.&#160; Applies a user-specified
 convolution to the image. The <i>order_</i> parameter represents the
 number of columns and rows in the filter kernel, and <i>kernel_</i>
 is a two-dimensional array of doubles representing the convolution
@@ -653,7 +653,7 @@ altered. Use a copy of the original if this is a problem.</font></td>
       <center><a name="distort"></a> <font size="-1">distort</font></center>
       </td>
       <td><font size="-1">const DistortImageMethod method, const size_t number_arguments, const double *arguments, const bool bestfit = false </font></td>
-      <td><font size="-1">Distort image.&#160; Applies a user-specfied
+      <td><font size="-1">Distort image.&#160; Applies a user-specified
 distortion to the image.</font></td>
     </tr>
     <tr>
@@ -677,7 +677,7 @@ list for repeated use.</font></td>
       <center><a name="edge"></a> <font size="-1">edge</font></center>
       </td>
       <td><font size="-1">size_t radius_ = 0.0</font></td>
-      <td><font size="-1">Edge image (hilight edges in image).&#160;
+      <td><font size="-1">Edge image (highlight edges in image).&#160;
 The radius is the radius of the pixel neighborhood.. Specify a radius
 of zero for automatic radius selection.</font></td>
     </tr>
@@ -687,7 +687,7 @@ of zero for automatic radius selection.</font></td>
       </td>
       <td><font size="-1">const double radius_ = 1, const double sigma_
 = 0.5</font></td>
-      <td><font size="-1">Emboss image (hilight edges with 3D effect).
+      <td><font size="-1">Emboss image (highlight edges with 3D effect).
 The <i> radius_</i> parameter specifies the radius of the Gaussian, in
 pixels, not counting the center pixel.&#160; The <i>sigma_</i>
 parameter specifies the standard deviation of the Laplacian, in pixels.</font></td>
@@ -972,7 +972,7 @@ range of 0 to ten.<br />
       <td><font size="-1">const Image &amp;mapImage_ , bool dither_ =
 false</font></td>
       <td><font size="-1">Remap image colors with closest color from
-reference image. Set dither_ to <i>true</i> in to apply
+reference image. Set dither_ to <i>true</i> to apply
 Floyd/Steinberg
 error diffusion to the image. By default, color reduction chooses an
 optimal&#160; set&#160; of colors that best represent the original
@@ -1047,7 +1047,7 @@ specified blur factor. The radius_ parameter specifies the radius of
 the Gaussian, in pixels, not counting the center pixel.&#160; The
 sigma_ parameter specifies the standard deviation of the Laplacian, in
 pixels. The angle_ parameter specifies the angle the object appears to
-be comming from (zero degrees is from the right).<br />
+be coming from (zero degrees is from the right).<br />
       </small></td>
     </tr>
     <tr>
@@ -1159,7 +1159,7 @@ an image to give a 3-D raised or lowered effect)</font></td>
       <td><font size="-1">const <a href="https://imagemagick.org/Magick++/Geometry.html">Geometry</a>
 &amp;size_, const std::string &amp;imageSpec_</font></td>
       <td><font size="-1">Read image of specified size into current
-object. This form is useful for images that do not specifiy their size
+object. This form is useful for images that do not specify their size
 or to specify a size hint for decoding an image. For example, when
 reading a Photo CD, JBIG, or JPEG image, a size request causes the
 library to return an image which is the next resolution greater or
@@ -1286,7 +1286,7 @@ but restricted to the specified channel.<br />
       </td>
       <td><font size="-1">int columns_, ssize_t rows_</font></td>
       <td><font size="-1">Roll image (rolls image vertically and
-horizontally) by specified number of columnms and rows)</font></td>
+horizontally) by specified number of columns and rows)</font></td>
     </tr>
     <tr>
       <td style="text-align: center;">
@@ -1525,7 +1525,7 @@ standard deviation of the Gaussian, in pixels. The <i>amount</i>_
 parameter specifies the percentage of the difference between the
 original and the blur image that is added back into the original. The <i>threshold</i>_
 parameter specifies the threshold in pixels needed to apply the
-diffence amount.</font></td>
+difference amount.</font></td>
     </tr>
     <tr>
       <td style="vertical-align: middle; text-align: center;"><small><a
@@ -1545,7 +1545,7 @@ standard deviation of the Gaussian, in pixels. The <i>amount</i>_
 parameter specifies the percentage of the difference between the
 original and the blur image that is added back into the original. The <i>threshold</i>_
 parameter specifies the threshold in pixels needed to apply the
-diffence amount.</font></td>
+difference amount.</font></td>
     </tr>
     <tr>
       <td style="text-align: center;">
@@ -2055,7 +2055,7 @@ composition is implicitly used (such as for image flattening).</font></td>
       <td><small><font size="-1"><small><a
  href="https://imagemagick.org/Magick++/Enumerations.html#CompressionType">CompressionType</a>
 compressType_</small></font></small></td>
-      <td><font size="-1">Image compresion type. The default is the
+      <td><font size="-1">Image compression type. The default is the
 compression type of the specified image file.</font></td>
     </tr>
     <tr>
@@ -2227,7 +2227,7 @@ objects.</font></td>
       <td><font size="-1"><a href="https://imagemagick.org/Magick++/Enumerations.html#FilterTypes">FilterTypes</a>
 filterType_</font></td>
       <td><font size="-1">Filter to use when resizing image. The
-reduction filter employed has a sigificant effect on the time required
+reduction filter employed has a significant effect on the time required
 to resize an image and the resulting quality. The default filter is <i>Lanczos</i>
 which has been shown to produce high quality results when reducing most
 images.</font></td>
@@ -2325,7 +2325,7 @@ disposed of) when creating a GIF animation.</font></td>
 &amp;colorProfile_</font></td>
       <td><font size="-1">ICC color profile. Supplied via a <a
  href="https://imagemagick.org/Magick++/Blob.html"> Blob</a> since Magick++/ and ImageMagick do not
-currently support formating this data structure directly.&#160;
+currently support formatting this data structure directly.&#160;
 Specifications are available from the <a href="http://www.color.org/">
 International Color Consortium</a> for the format of ICC color profiles.</font></td>
     </tr>
@@ -2361,7 +2361,7 @@ image.</font></td>
 iptcProfile_</font></td>
       <td><font size="-1">IPTC profile. Supplied via a <a
  href="https://imagemagick.org/Magick++/Blob.html"> Blob</a> since Magick++ and ImageMagick do not
-currently&#160; support formating this data structure directly.
+currently&#160; support formatting this data structure directly.
 Specifications are available from the <a href="http://www.iptc.org/">
 International Press Telecommunications Council</a> for IPTC profiles.</font></td>
     </tr>

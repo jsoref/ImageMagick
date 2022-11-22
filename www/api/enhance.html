@@ -147,7 +147,7 @@ MagickBooleanType AutoLevelImage(Image *image,ExceptionInfo *exception)
 </dl>
 <h2><a href="../../api/MagickCore/enhance_8c.html" id="BrightnessContrastImage">BrightnessContrastImage</a></h2>
 
-<p>BrightnessContrastImage() changes the brightness and/or contrast of an image.  It converts the brightness and contrast parameters into slope and intercept and calls a polynomical function to apply to the image.</p>
+<p>BrightnessContrastImage() changes the brightness and/or contrast of an image.  It converts the brightness and contrast parameters into slope and intercept and calls a polynomial function to apply to the image.</p>
 
 <p>The format of the BrightnessContrastImage method is:</p>
 
@@ -228,11 +228,11 @@ MagickBooleanType CLAHEImage(Image *image,const size_t width,
 </dl>
 <h2><a href="../../api/MagickCore/enhance_8c.html" id="ClutImage">ClutImage</a></h2>
 
-<p>ClutImage() replaces each color value in the given image, by using it as an index to lookup a replacement color value in a Color Look UP Table in the form of an image.  The values are extracted along a diagonal of the CLUT image so either a horizontal or vertial gradient image can be used.</p>
+<p>ClutImage() replaces each color value in the given image, by using it as an index to lookup a replacement color value in a Color Look UP Table in the form of an image.  The values are extracted along a diagonal of the CLUT image so either a horizontal or vertical gradient image can be used.</p>
 
 <p>Typically this is used to either re-color a gray-scale image according to a color gradient in the CLUT image, or to perform a freeform histogram (level) adjustment according to the (typically gray-scale) gradient in the CLUT image.</p>
 
-<p>When the 'channel' mask includes the matte/alpha transparency channel but one image has no such channel it is assumed that that image is a simple gray-scale image that will effect the alpha channel values, either for gray-scale coloring (with transparent or semi-transparent colors), or a histogram adjustment of existing alpha channel values.   If both images have matte channels, direct and normal indexing is applied, which is rarely used.</p>
+<p>When the 'channel' mask includes the matte/alpha transparency channel but one image has no such channel it is assumed that image is a simple gray-scale image that will effect the alpha channel values, either for gray-scale coloring (with transparent or semi-transparent colors), or a histogram adjustment of existing alpha channel values.   If both images have matte channels, direct and normal indexing is applied, which is rarely used.</p>
 
 <p>The format of the ClutImage method is:</p>
 
@@ -618,7 +618,7 @@ MagickBooleanType LevelizeImage(Image *image,const double black_point,
 
 <p>LevelImageColors() maps the given color to "black" and "white" values, linearly spreading out the colors, and level values on a channel by channel bases, as per LevelImage().  The given colors allows you to specify different level ranges for each of the color channels separately.</p>
 
-<p>If the boolean 'invert' is set true the image values will modifyed in the reverse direction. That is any existing "black" and "white" colors in the image will become the color values given, with all other values compressed appropriately.  This effectivally maps a greyscale gradient into the given color gradient.</p>
+<p>If the boolean 'invert' is set true the image values will modified in the reverse direction. That is any existing "black" and "white" colors in the image will become the color values given, with all other values compressed appropriately.  This effectively maps a greyscale gradient into the given color gradient.</p>
 
 <p>The format of the LevelImageColors method is:</p>
 
@@ -872,7 +872,7 @@ MagickBooleanType WhiteBalanceImage(Image *image,
     </div>
   </footer>
 
-  <!-- Javascript assets -->
+  <!-- JavaScript assets -->
   <script src="../../assets/magick.js" ></script>
   </body>
 </html>

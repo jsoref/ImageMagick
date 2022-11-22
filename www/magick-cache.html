@@ -130,7 +130,7 @@ video, audio or metadata in a local folder.">
 <h4>Delete content from the MagickCache</h4>
 <p>We can explicitly delete content:</p>
 <pre class="bg-light text-dark mx-4"><samp>$ magick-cache -passkey passkey.txt delete /opt/magick-cache movies/images/mission-impossible/cast/rebecca-ferguson</samp></pre>
-<p>or we can delete all cast images that have expired (exceeded their respective time to live), try this comand:</p>
+<p>or we can delete all cast images that have expired (exceeded their respective time to live), try this command:</p>
 <pre class="bg-light text-dark mx-4"><samp>$ magick-cache -passkey passkey.txt expire /opt/magick-cache movies/images/mission-impossible/cast</samp></pre>
 <h4>Identify the MagickCache content</h4>
 <p>Perhaps you want to identify all the content you own:</p>
@@ -141,7 +141,7 @@ identified 1 resources</samp></pre>
 <p>Others can store content in the cache along side your content.  However, their content is unavailable to you.  You cannot get, identify, expire or delete content that you do not own as determined by your secret passkey.</p>
 <p>The MagickCache owner can get, identify, expire, or delete all the content, including content you own, with this command, for example:</p>
 <pre class="bg-light text-dark mx-4"><samp>$ magick-cache -passkey passkey.txt identify /opt/magick-cache /</samp></pre>
-<p>Note, expired reesources are annotated with an asterisks.</p>
+<p>Note, expired resources are annotated with an asterisks.</p>
 <h4>MagickCache is not just for Images</h4>
 <p>In addition to a type of <samp>image</samp>, you can store the image content in its original form, video, or audio as content type of <samp>blob</samp> or metadata with a content type of <samp>meta</samp>:</p>
 <pre class="bg-light text-dark mx-4"><samp>$ magick-cache -passkey passkey.txt put /opt/magick-cache movies/blob/mission-impossible/cast/rebecca-ferguson 20210508-rebecca-ferguson.mp4</samp></pre>
@@ -153,7 +153,7 @@ identified 1 resources</samp></pre>
 <pre class="bg-light text-dark mx-4"><samp>$ magick-cache -passkey passkey.txt delete /opt/magick-cache /</samp></pre>
 <p>Be careful, after this command, your cached content is irrevocably lost.</p>
 <h4>Security</h4>
-<p>MagickCache security is not crytographically strong.  Instead it generates a unique hash for each resource ensuring the resource ID cannot be discovered.  A resource is accessible to both the user of the cache and the cache owner provided they can present their respective passkeys.  They are also accessible to anyone with sufficient privileges to access the MagickCache  disk path.</p>
+<p>MagickCache security is not cryptographically strong.  Instead it generates a unique hash for each resource ensuring the resource ID cannot be discovered.  A resource is accessible to both the user of the cache and the cache owner provided they can present their respective passkeys.  They are also accessible to anyone with sufficient privileges to access the MagickCache  disk path.</p>
 </div>
   </div>
   </main><!-- /.container -->
@@ -179,7 +179,7 @@ identified 1 resources</samp></pre>
     </div>
   </footer>
 
-  <!-- Javascript assets -->
+  <!-- JavaScript assets -->
   <script src="assets/magick.js" ></script>
   </body>
 </html>
